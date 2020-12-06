@@ -93,12 +93,12 @@ def open_browser():
 def create_app_ui():
     # Creating UI of webpage
     main_layout = html.Div([
-    html.H1('Terrorism Analysis with Insights', id='Main_title',style={ "color": "white"}),
+    html.H1('🛑Terrorism Analysis with Insights🛑', id='Main_title',style={ "color": "white"}),
     dcc.Tabs(id="Tabs", value="Map",children=[
-        dcc.Tab(label="Map tool" ,id="Map tool",value="Map", children=[
+        dcc.Tab(label="Map tool🗺️" ,id="Map tool",value="Map", children=[
             dcc.Tabs(id = "subtabs", value = "WorldMap",children = [
-                dcc.Tab(label="World Map tool", id="World", value="WorldMap"),
-                dcc.Tab(label="India Map tool", id="India", value="IndiaMap")
+                dcc.Tab(label="World Map tool🌎", id="World", value="WorldMap"),
+                dcc.Tab(label="India Map tool🟠⚪🟢", id="India", value="IndiaMap")
                 ]),
             dcc.Dropdown(
                 id='month-dropdown', 
@@ -160,10 +160,10 @@ def create_app_ui():
                         ),
             html.Br()
       ]),
-        dcc.Tab(label = "Chart Tool", id="chart tool", value="Chart", children=[
+        dcc.Tab(label = "Chart Tool📈", id="chart tool", value="Chart", children=[
             dcc.Tabs(id = "subtabs2", value = "WorldChart",children = [
-                dcc.Tab(label="World Chart tool", id="WorldC", value="WorldChart"),          
-              dcc.Tab(label="India Chart tool", id="IndiaC", value="IndiaChart")]),
+                dcc.Tab(label="World Chart tool🌎", id="WorldC", value="WorldChart"),          
+              dcc.Tab(label="India Chart tool🟠⚪🟢", id="IndiaC", value="IndiaChart")]),
               html.Br(),
               dcc.Dropdown(id="Chart_Dropdown", options = chart_dropdown_values, placeholder="Select option", value = "region_txt" ,style={ "color": "red"}), 
               html.Br(),
